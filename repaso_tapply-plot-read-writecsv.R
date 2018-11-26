@@ -1,3 +1,11 @@
+#=============================================================================#
+# Name   : R_base_repaso
+# Author : Jorge Flores - Natalie Bravo
+# Date   : 
+# Version: 
+# Aim    : 
+# URL    : 
+#=============================================================================#
 # Crear 20 data frames de 50 filas cada uno
 for(i in 1:20)
 {
