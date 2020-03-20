@@ -1,11 +1,11 @@
-#===============================================================================
+#=============================================================================#
 # Name   : barplot_lines_start_in_0
 # Author : Jorge Flores
 # Date   :
 # Version:
 # Aim    : Barplot and lines adjusting the 'X' axis to zero
 # URL    :
-#===============================================================================
+#=============================================================================#
 
 # Don't change anything after here, unless you know what you're doing
 
@@ -55,7 +55,7 @@ par(new=T)
 plot(bar, var3, axes=F, ylim=c(-25,160), xlab='', ylab='', type='c',lwd=1 ,xlim = c(0,round(max(bar),0)), col='black')
 axis(4,lwd=1,line=1.5, col='black',col.axis='black')
 points(bar, var3,pch=16,cex=1,col='black')
-mtext(4,text=expression(Oxygen~paste('(',µmol,.L,')')),line=3.8, cex=0.7)
+mtext(4,text=expression(Oxygen~paste('(',?mol,.L,')')),line=3.8, cex=0.7)
 
 #----------- ----------- -----------plot2 ----------- ----------- -----------#
 graf <- barplot(var4, axes=T, ylim=c(-1,5), col='lightcoral',xlim = c(0,round(max(bar),0)))
@@ -75,7 +75,7 @@ par(new=T)
 plot(bar, var6, axes=F, ylim=c(-25,160), xlab='', ylab='', type='c',lwd=1 ,xlim = c(0,round(max(bar),0)), col='black')
 axis(4,lwd=1,line=1.5, col='black',col.axis='black')
 points(bar, var6,pch=16,cex=1,col='black')
-mtext(4,text=expression(Oxygen~paste('(',µmol,.L,')')),line=3.8, cex=0.7)
+mtext(4,text=expression(Oxygen~paste('(',?mol,.L,')')),line=3.8, cex=0.7)
 
 #----------- ----------- -----------plot3 ----------- ----------- -----------#
 graf <- barplot(var7, axes=T, ylim=c(-1,5), col='lightcoral',xlim = c(0,round(max(bar),0)))
@@ -94,14 +94,13 @@ par(new=T)
 plot(bar, var9, axes=F, ylim=c(-25,160), xlab='', ylab='', type='c',lwd=1 ,xlim = c(0,round(max(bar),0)), col='black')
 axis(4,lwd=1,line=1.5, col='black',col.axis='black')
 points(bar, var9,pch=16,cex=1,col='black')
-mtext(4,text=expression(Oxygen~paste('(',µmol,.L,')')),line=3.8, cex=0.7)
+mtext(4,text=expression(Oxygen~paste('(',?mol,.L,')')),line=3.8, cex=0.7)
 
 #--------- --------- artifice for legend --------- ---------#
 par(mai=c(0,0,0,0))
 plot.new()
 legend(x='center',legend = c('pH','Oxygen'),horiz = T, pch=c(0,16),col=c('black','black'),bty = 'n')
 dev.off()
-#===============================================================================
+#=============================================================================#
 # END OF PROGRAM
-#===============================================================================
-
+#=============================================================================#
