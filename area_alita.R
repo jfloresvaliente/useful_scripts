@@ -29,8 +29,8 @@ print(lonlat)
 geosphere::areaPolygon(lonlat)/10000
 
 png(filename = 'C:/Users/jflores/Documents/JORGE/ECOGRANJA_WALLPAKUNA/terreno/Alita.png', height = 850, width = 850, res = 120)
-plot(lonlat[,1], lonlat[,2], type = 'l', axes = F, xlab = '', ylab = '')
-grid()
+plot(lonlat[,1], lonlat[,2], type = 'l', axes = F, xlab = '', ylab = '', col = 'red', lwd = 2)
+grid(lwd = 2, col = 'red')
 box()
 mtext(text = 'Colegio', side = 1, adj = .85, line = -2)
 dev.off()
