@@ -2,7 +2,7 @@ library(stringr)
 dat <- read.table('C:/Users/jflores/Desktop/gastos_senegal.csv', header = T, sep = ';')
 
 month      <- unlist(str_split(string = dat$date, pattern = '/'))
-month      <- month[seq(1,length(month),3)]
+month      <- month[seq(2,length(month),3)]
 dat$month  <- month
 dat$gasto  <- NA
 
