@@ -1,5 +1,5 @@
 library(stringr)
-dat <- read.table('C:/Users/jflores/Desktop/gastos_senegal.csv', header = T, sep = ';')
+dat <- read.table('C:/Users/jflores/Desktop/gastos_senegal2021.csv', header = T, sep = ';')
 
 month      <- unlist(str_split(string = dat$date, pattern = '/'))
 month      <- month[seq(2,length(month),3)]
@@ -30,9 +30,9 @@ for(i in 1:length(item_gasto)){
 tapply(dat$CFA, list(dat$month, dat$gasto), sum, na.rm = T)
 mon <- tapply(dat$CFA, list(dat$month), sum, na.rm = T)/1000
 x11()
-barplot(mon, ylim = c(0,270))
+barplot(mon, ylim = c(0,280))
 box()
-abline(h = seq(200, 260, 20), lty = 2)
+abline(h = seq(200, 280, 20), lty = 2)
 
 # library("ggmap")
 # us <- c(left = -100, bottom = -20, right = -70, top = 0)
