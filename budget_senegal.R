@@ -1,5 +1,5 @@
 library(stringr)
-dat <- read.table('C:/Users/jflores/Desktop/gastos_senegal2021.csv', header = T, sep = ';')
+dat <- read.table('C:/Users/jflores/Documents/JORGE/VARIOS/gastos_senegal2021.csv', header = T, sep = ';')
 
 month      <- unlist(str_split(string = dat$date, pattern = '/'))
 month      <- month[seq(2,length(month),3)]
