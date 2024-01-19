@@ -16,7 +16,7 @@ hrs <- round(hrs[[1]], 2)
 Kwh <- lec_diff/hrs
 
 # Consumo mensual
-Kwm <- Kwh * 30 * 24
+Kwm <- Kwh * 30 * 24# Kw * dias * horas * year
 
 print(paste('Kw/h   : ', round(Kwh, 3)))
 print(paste('Kw/mes : ', round(Kwm, 3)))
