@@ -1,3 +1,12 @@
+#=============================================================================#
+# Name   : EnergyConsumptionCalculator
+# Author : Jorge Flores-Valiente
+# Date   : 
+# Version:
+# Aim    : Calculate the energy consumed in kw/h.
+# URL    : 
+#=============================================================================#
+
 # Calcular consumo de energia Alita
 library(lubridate)
 
@@ -16,7 +25,11 @@ hrs <- round(hrs[[1]], 2)
 Kwh <- lec_diff/hrs
 
 # Consumo mensual
-Kwm <- Kwh * 30 * 24# Kw * dias * horas * year
+Kwm <- Kwh * 30 * 24    # Kw * dias * horas * year
 
 print(paste('Kw/h   : ', round(Kwh, 3)))
 print(paste('Kw/mes : ', round(Kwm, 3)))
+
+#=============================================================================#
+# END OF PROGRAM
+#=============================================================================#
